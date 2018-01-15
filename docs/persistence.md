@@ -9,21 +9,22 @@ We don't know yet! PANIC!!!! :scream:
 ### messages
 
 # How to store
-## Middleware
-Writing it middleware can't work because "storage middlewares can be used for storing attributes about a user or channel or team" unless we somehow extend this.
+## Writing middleware
+Writing it as middleware can't work because "storage middleware can be used for storing attributes about a user or channel or team" unless we somehow extend this.
 
-## Store objects
+## Storing javascript objects/key-value pairs
 
 # How to retrieve
 
 # What we want from persistence.
- - Not lose messages between reboots
+ - Maintain conversations between restarts
  - Have a central data store that multiple docker containers can share when behind a load balancer without the need to pin conversations to a specific container
  - Have persistence work in multi threaded conversations
 
 
 # Data store
  -  Redis
+
    * Why redis
         - Easy to set up and manage.
         - Botkit uses JS objects and arrays for everything so using a key value store is the path of least resistance.
