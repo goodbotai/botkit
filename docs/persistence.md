@@ -5,7 +5,10 @@ Conversations, specifically conversations in tasks to take advantage of the `bot
 ### tasks
 We don't want to store entire tasks but rather subsets of the conversations within tasks.
 
+  * source_message - Object
+  * id - Number
 
+  
 ### conversations
 Conversation objects are embedded in Task objects hence are not the primary resource to be stored.
 
@@ -15,6 +18,7 @@ Parts of conversations we want to store:
   * thread -
   * threads -
   * startTime - DateTime
+
 
 ### messages
 
