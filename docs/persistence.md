@@ -8,17 +8,20 @@ We don't want to store entire tasks but rather subsets of the conversations with
   * source_message - Object
   * id - Number
 
-  
+
 ### conversations
 Conversation objects are embedded in Task objects hence are not the primary resource to be stored.
 
 Parts of conversations we want to store:
-  * status - Bool
+  * status - String ('active' or 'new')
   * messages - Array
   * thread -
   * threads -
   * startTime - DateTime
-
+  * next_thread
+  * processing - Bool (should be set to true)
+  * id?
+  * transcript (contains all the messages and can give the bot "some context" of the conversation)
 
 ### messages
 
